@@ -12,3 +12,17 @@ function openPop() {
 }
 
 modalButton.addEventListener('click', openPop)
+
+
+
+const burgerMenu = document.getElementById('menu')
+
+function openMenu() {
+    let block = document.getElementById('block');
+    if (block.style.display === "none")
+        block.style.display = "flex"
+    else
+        block.style.display = "none";
+}
+
+burgerMenu.addEventListener('click', openMenu)
